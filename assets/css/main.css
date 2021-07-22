@@ -1,0 +1,173 @@
+.container__background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  height: 100px;
+  top: 16px;
+  left: 40px;
+}
+
+.header__logo-img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.header__list-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 32px;
+  font-weight: 900;
+}
+
+.header__list-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__list-item-text {
+  position: relative;
+}
+
+.header__list-item-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 20px;
+  height: 2px;
+  left: 0;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.header__list-item-text:hover:after {
+  width: 100%;
+}
+
+.header__list-item p {
+  text-shadow: #222 4px 4px 4px;
+}
+
+.header__list-item-icon {
+  margin-right: 10px;
+}
+
+.container__logo {
+  position: absolute;
+  top: 280px;
+}
+
+.container__logo-img {
+  width: 600px;
+  margin-left: 100px;
+}
+
+.container__title,
+.container__text {
+  margin-left: 100px;
+}
+
+.container__text-header {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container__text {
+  margin-top: 20px;
+}
+
+.container__text-title {
+  max-width: 1000px;
+}
+
+.container__title-text-border {
+  margin-right: 10px;
+}
+
+.container__title-text-border,
+.container__text-title,
+.container__text-title-day {
+  color: #fff;
+}
+
+.container__button-play {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  border-color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.container__button-play-icon {
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+.container__button-text {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.container__button-circle {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container__button-circle-icon {
+  font-size: 2rem;
+}
+
+.container__title-text-border {
+  font-size: 1.4rem;
+}
+
+.container__text-title {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 200;
+  text-shadow: #222 4px 4px 4px;
+}
+
+.container__text-title-day {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 30px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.container__title-text-border {
+  font-weight: 500;
+  font-size: 1.6rem;
+  border: 2px solid #fff;
+  padding: 3px;
+}
